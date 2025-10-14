@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - John Michael Papa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar">
+    <div class="navbar-brand">Portfolio</div>
+    <ul class="navbar-links">
+      <li><a href="#project">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About Me</a></li>
+    </ul>
+  </nav>
+
+  <!-- Custom cursor elements (positioned globally via JavaScript) -->
+  <div class="custom-cursor"></div>
+  <div class="cursor-dot"></div>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero scale-on-scroll">
+    
+    <!-- Hero text content -->
+    <div class="hero-content">
+      <h1>Hi There,<br>I'm John Michael</h1>
+      <h2>
+        I Am Into 
+        <span class="webdev"><span>Web Developer</span></span>
+      </h2>
+      <a href="assets/CV/John_Michael_Papa_CV.pdf" download="John-Michael-Papa-CV.pdf" class="bn31">
+  <span class="bn31span">
+    Download CV
+    <svg class="download-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+      <polyline points="7 10 12 15 17 10"></polyline>
+      <line x1="12" y1="15" x2="12" y2="3"></line>
+    </svg>
+  </span>
+</a>
+    </div>
+
+    <!-- Hero animated avatar and visual effects -->
+    <div class="hero-image">
+      <!-- Floating bat/wing orbs (styled via CSS pseudo-elements) -->
+      <div class="bat"></div>
+      
+      <!-- Rotating orbital rings with parallax effect -->
+      <div class="bat-ring" data-parallax="0.1"></div>
+      <div class="bat-ring-2" data-parallax="0.05"></div>
+      <div class="bat-ring-3" data-parallax="0.03"></div>
+      
+      <!-- Floating particle elements -->
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      
+      <!-- Avatar image -->
+      <img src="assets/images/avatar.png" alt="Avatar">
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="project" class="page-section scroll-reveal">
+    <h2>Featured Projects</h2>
+    <p class="section-subtitle">Showcasing my development work and technical skills</p>
+    
+    <!-- PROJECT 1: Brainiacz -->
+    <div class="project-showcase scroll-reveal">
+      
+      <!-- Project header and description -->
+      <div class="project-header">
+        <h3 class="project-title">Brainiacz</h3>
+        <p class="project-description">
+          Online tutoring app serves as a bridge between learners and educators,
+          offering secure access, role-based features, and efficient administration 
+          using Flutter and Firebase technology
+        </p>
+      </div>
+
+      <!-- Technology stack -->
+      <div class="tech-stack">
+        <h4>Technology Stack</h4>
+        <div class="tech-tags">
+          <span class="tech-tag">Dart</span>
+          <span class="tech-tag">Flutter</span>
+          <span class="tech-tag">Android Studio</span>
+          <span class="tech-tag">Firebase</span>
+        </div>
+      </div>
+
+      <!-- Image slider -->
+      <div class="slider-wrapper">
+        
+        <!-- Previous button -->
+        <button class="slider-btn prev" aria-label="Previous slide">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+
+        <!-- Slider container -->
+        <div class="slider-container">
+          
+          <div class="slider-item">
+            <img src="assets/images/ss/ss-1.png" alt="Project screenshot 1">
+            <div class="slide-caption">
+              <h5>Role Selection</h5>
+              <p>This is the Role Selection Online Peer Tutoring where the user's making their account and 
+                selecting what their role is which is "Tutor" or "Student".</p>
+            </div>
+          </div>
+
+          <div class="slider-item">
+            <img src="assets/images/ss/ss-2.png" alt="Project screenshot 2">
+            <div class="slide-caption">
+              <h5>Log in Page for Student</h5>
+              <p>This is the Student Login Page, where students enter their email and password 
+                to access their accounts. There is also an option to sign up for new users.</p>
+            </div>
+          </div>
+
+          <div class="slider-item">
+            <img src="assets/images/ss/ss-3.png" alt="Project screenshot 3">
+            <div class="slide-caption">
+              <h5>Log in Page for Tutor</h5>
+              <p>This is the Tutor Login Page, where users who want to tutor can enter their credentials to sign in. 
+                If they don't have an account, they have the option to sign up.</p>
+            </div>
+          </div>
+
+          <div class="slider-item">
+            <img src="assets/images/ss/ss-4.png" alt="Project screenshot 4">
+            <div class="slide-caption">
+              <h5>Log in Page for Admin</h5>
+              <p>This is the Admin Login Page, where admins can enter their email 
+                and password to access their account and manage the platform.</p>
+            </div>
+          </div>
+
+          <div class="slider-item">
+            <img src="assets/images/ss/ss-5.png" alt="Project screenshot 5">
+            <div class="slide-caption">
+              <h5>Student Dashboard</h5>
+              <p>This is the Student Dashboard, where students can navigate between different 
+                sections like "My Chats," "My Requests," and "Tutor Suggestions."</p>
+            </div>
+          </div>
+
+          <div class="slider-item">
+            <img src="assets/images/ss/ss-6.png" alt="Project screenshot 6">
+            <div class="slide-caption">
+              <h5>Student Navigation Menu</h5>
+              <p>This is the Student Dashboard with the side menu open. From here, students can easily navigate their messages, 
+                check their profile, search for tutors, view their requests, or log out. 
+                The main dashboard in the background provides options to manage requests, 
+                explore tutor suggestions, and start a chat with a tutor when needed.</p>
+            </div>
+          </div>
+
+          <div class="slider-item">
+            <img src="assets/images/ss/ss-7.png" alt="Project screenshot 7">
+            <div class="slide-caption">
+              <h5>Tutor Search Window</h5>
+              <p>This is the Student Dashboard with a pop-up where students can enter the subject 
+                they want to study and search for a tutor. 
+                They can either start the search or cancel.</p>
+            </div>
+          </div>
+
+          <div class="slider-item">
+            <img src="assets/images/ss/ss-8.png" alt="Project screenshot 8">
+            <div class="slide-caption">
+              <h5>Suggested Tutors</h5>
+              <p>This is the Tutor Suggestions page, where students can browse a list of available tutors.
+                Each tutor's profile displays their name, email, subjects they teach, and ratings if available.
+                Students can view a tutor's profile to learn more or choose a tutor to connect with.</p>
+            </div>
+          </div>
+
+          <div class="slider-item">
+            <img src="assets/images/ss/ss-9.png" alt="Project screenshot 9">
+            <div class="slide-caption">
+              <h5>Request Session</h5>
+              <p>This is the Student Request Form where students can select a subject (such as Math) 
+                and request a tutoring session for a specific date.</p>
+            </div>
+          </div>
+
+          <div class="slider-item">
+            <img src="assets/images/ss/ss-10.png" alt="Project screenshot 10">
+            <div class="slide-caption">
+              <h5>Request Time Session</h5>
+              <p>This is the Student Request Form where students can select a subject
+                (such as Math) and request a tutoring session for a specific date.</p>
+            </div>
+          </div>
+
+          <div class="slider-item">
+            <img src="assets/images/ss/ss-11.png" alt="Project screenshot 11">
+            <div class="slide-caption">
+              <h5>Tutor Dashboard</h5>
+              <p>This is the Tutor Dashboard showing navigation options for Chats, Profile, Requests, and Modules.</p>
+            </div>
+          </div>
+
+          <div class="slider-item">
+            <img src="assets/images/ss/ss-12.png" alt="Project screenshot 12">
+            <div class="slide-caption">
+              <h5>Tutor Profile</h5>
+              <p>Description: This is the Tutor Profile page displaying contact information, subjects, 
+                hourly rate, education, experience, and an "About Me" section with an option to set availability status.</p>
+            </div>
+          </div>
+
+          <div class="slider-item">
+            <img src="assets/images/ss/ss-13.png" alt="Project screenshot 13">
+            <div class="slide-caption">
+              <h5>Tutor Request</h5>
+              <p>This is the Requests Overview page displaying incoming tutoring session requests, 
+                including their status and actions to view profiles, accept, or decline.</p>
+            </div>
+          </div>
+
+          <div class="slider-item">
+            <img src="assets/images/ss/ss-14.png" alt="Project screenshot 14">
+            <div class="slide-caption">
+              <h5>Module Management</h5>
+              <p>This is the Modules Management page where tutors can add new teaching modules and view 
+                their existing modules with subject and grade level detail.</p>
+            </div>
+          </div>
+
+          <div class="slider-item">
+            <img src="assets/images/ss/ss-15.png" alt="Project screenshot 15">
+            <div class="slide-caption">
+              <h5>Admin Dashboard</h5>
+              <p>This page is the Admin Dashboard. Admin can access the accounts
+                that have been created by the users of app Student and Tutors.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Next button -->
+        <button class="slider-btn next" aria-label="Next slide">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Slider navigation dots -->
+      <div class="slider-dots"></div>
+      
+      <!-- GitHub link -->
+      <a href="https://github.com/emem200320/brainiacz" target="_blank" class="project-btn secondary">
+        <span>View Code</span>
+      </a>
+    </div>
+
+    <!-- PROJECT 2: CKC Student Management System -->
+    <div class="project-showcase scroll-reveal">
+      
+      <!-- Project header and description -->
+      <div class="project-header">
+        <h3 class="project-title">CKC Student Management System</h3>
+        <p class="project-description">
+          A desktop application that digitizes student records for Christ the King College. 
+          It replaces paper-based systems, allowing students to view their grades and admins 
+          to manage all academic data efficiently in one secure platform.
+        </p>
+      </div>
+
+      <!-- Technology stack -->
+      <div class="tech-stack">
+        <h4>Technology Stack</h4>
+        <div class="tech-tags">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">Tkinter</span>
+          <span class="tech-tag">SQLite</span>
+        </div>
+      </div>
+
+      <!-- Image slider -->
+      <div class="slider-wrapper">
+        
+        <!-- Previous button -->
+        <button class="slider-btn prev" aria-label="Previous slide">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+
+        <!-- Slider container -->
+        <div class="slider-container">
+          
+          <div class="slider-item">
+            <img src="assets/images/sss/sss-1.jpeg" alt="Project screenshot 1">
+            <div class="slide-caption">
+              <h5>Main Menu</h5>
+              <p>Serves as the central navigation hub, allowing
+                users to access the Login, Admin, and Sign-up portals.</p>
+            </div>
+          </div>
+
+          <div class="slider-item">
+            <img src="assets/images/sss/sss-2.jpeg" alt="Project screenshot 2">
+            <div class="slide-caption">
+              <h5>Sign Up Form</h5>
+              <p>Allowed to register new students into the system by
+                collecting their comprehensive personal, guardian, and educational information.</p>
+            </div>
+          </div>
+
+          <div class="slider-item">
+            <img src="assets/images/sss/sss-3.jpeg" alt="Project screenshot 3">
+            <div class="slide-caption">
+              <h5>Student Login</h5>
+              <p>It secure authentication point for students to access 
+                their personal academic dashboard.</p>
+            </div>
+          </div>
+
+          <div class="slider-item">
+            <img src="assets/images/sss/sss-4.jpeg" alt="Project screenshot 4">
+            <div class="slide-caption">
+              <h5>Empty Student Dashboard</h5>
+              <p>It demonstrate the system's user-friendly feedback, showing a "No data found" message 
+                when a student's academic record is empty or unavailable.</p>
+            </div>
+          </div>
+
+          <div class="slider-item">
+            <img src="assets/images/sss/sss-5.jpeg" alt="Project screenshot 5">
+            <div class="slide-caption">
+              <h5>Populated Student Dashboard</h5>
+              <p>The core student view, displaying a complete academic profile including
+                personal details, enrolled subjects, grades, and remarks</p>
+            </div>
+          </div>
+
+          <div class="slider-item">
+            <img src="assets/images/sss/sss-6.jpeg" alt="Project screenshot 6">
+            <div class="slide-caption">
+              <h5>Student Portal Menu</h5>
+              <p>Provides logged-in students with navigation to filter their view by academic
+                year (First Year to Fourth Year).</p>
+            </div>
+          </div>
+
+          <div class="slider-item">
+            <img src="assets/images/sss/sss-7.jpeg" alt="Project screenshot 7">
+            <div class="slide-caption">
+              <h5>Admin Login</h5>
+              <p>A dedicated and secure login portal for administrative staff to access 
+                the system's backend controls.</p>
+            </div>
+          </div>
+
+          <div class="slider-item">
+            <img src="assets/images/sss/sss-8.jpeg" alt="Project screenshot 8">
+            <div class="slide-caption">
+              <h5>Admin Portal Menu</h5>
+              <p>The administrative control panel, providing options to View, Edit,
+                and Print student information records.</p>
+            </div>
+          </div>
+
+          <div class="slider-item">
+            <img src="assets/images/sss/sss-9.jpeg" alt="Project screenshot 9">
+            <div class="slide-caption">
+              <h5>Admin Profile View</h5>
+              <p>It show the admin view of a student profile, demonstrating how the system displays 
+                student data with placeholder values ("None") when information is missing.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Next button -->
+        <button class="slider-btn next" aria-label="Next slide">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Slider navigation dots -->
+      <div class="slider-dots"></div>
+
+      <!-- GitHub link -->
+      <a href="https://github.com/emem200320/STUDENT-DATA" target="_blank" class="project-btn secondary">
+        <span>View Code</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="page-section scroll-reveal">
+    <h2>Get in touch</h2>
+    <p>Feel free to reach out through any of these platforms. I'm always open to discussing new projects, creative ideas, or opportunities.</p>
+    
+    <div class="contact-grid">
+      
+      <!-- LinkedIn card -->
+      <a href="https://www.linkedin.com/in/john-michael-papa" target="_blank" class="contact-card scroll-reveal">
+        <img src="assets/images/linkedin-square.png" alt="LinkedIn">
+        <h3>LinkedIn</h3>
+        <p>Connect professionally</p>
+      </a>
+      
+      <!-- GitHub card -->
+      <a href="https://github.com/emem200320" target="_blank" class="contact-card scroll-reveal">
+        <img src="assets/images/github.png" alt="GitHub">
+        <h3>GitHub</h3>
+        <p>View my projects</p>
+      </a>
+      
+      <!-- WhatsApp card -->
+      <a href="https://wa.me/971582461928" target="_blank" class="contact-card scroll-reveal">
+        <img src="assets/images/whatsapp-square.png" alt="WhatsApp">
+        <h3>WhatsApp</h3>
+        <p>Quick message</p>
+      </a>
+      
+      <!-- Email card -->
+      <a href="mailto:johnmichaelpapa@gmail.com" class="contact-card scroll-reveal">
+        <img src="assets/images/email.png" alt="Email">
+        <h3>Email</h3>
+        <p>johnmichaelpapa@gmail.com</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="page-section scroll-reveal">
+    <h2>About Me</h2>
+    <p class="section-subtitle">Passionate Developer Creating Purpose-Driven Digital Experiences</p>
+    
+    <div class="about-container">
+      
+      <!-- Profile summary -->
+      <div class="about-intro scroll-reveal">
+        <p>
+          Hello! I'm <strong>John Michael Papa</strong>, a results-driven developer specializing in 
+          <strong>mobile, web, and desktop development</strong>. I thrive on transforming ideas into 
+          functional, user-friendly applications that solve real-world problems.
+        </p>
+        <p>
+          My journey in tech has equipped me with expertise in <strong>Flutter, Firebase, Python, 
+          and full-stack development</strong>. I'm passionate about creating seamless user 
+          experiences and writing clean, maintainable code across multiple platforms.
+        </p>
+      </div>
+
+      <!-- Skills section -->
+      <div class="skills-section">
+        <h3>Technical Stack</h3>
+        <div class="skills-grid">
+          
+          <!-- Frontend skills -->
+          <div class="skill-category scroll-reveal">
+            <h4>Frontend</h4>
+            
+            <div class="skill-item">
+              <span class="skill-name">Flutter & Dart</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="90%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <span class="skill-name">HTML5, CSS3, JavaScript</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="85%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <span class="skill-name">Responsive Design</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="88%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <span class="skill-name">UI/UX Implementation</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="82%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <span class="skill-name">Tkinter Desktop UI</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="75%"></div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Backend skills -->
+          <div class="skill-category scroll-reveal">
+            <h4>Backend</h4>
+            
+            <div class="skill-item">
+              <span class="skill-name">Firebase (Auth, Firestore, Storage)</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="95%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <span class="skill-name">Python Backend Logic</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="75%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <span class="skill-name">REST APIs</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="90%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <span class="skill-name">Database Management</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="50%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <span class="skill-name">Server-side Architecture</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="50%"></div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Tools and other skills -->
+          <div class="skill-category scroll-reveal">
+            <h4>Tools & Other</h4>
+            
+            <div class="skill-item">
+              <span class="skill-name">Android Studio</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="95%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <span class="skill-name">Git & GitHub</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="70%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <span class="skill-name">SQLite & Database Design</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="80%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <span class="skill-name">Agile Development</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="50%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <span class="skill-name">QA Testing</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="50%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Services section -->
+      <div class="services-section">
+        <h3>What I Do</h3>
+        <div class="services-grid">
+          
+          <div class="service-card scroll-reveal float-on-scroll">
+            <div class="service-icon">📱</div>
+            <h4>Mobile Development</h4>
+            <p>Building cross-platform mobile applications using Flutter with focus on performance, security, and user experience.</p>
+          </div>
+          
+          <div class="service-card scroll-reveal float-on-scroll">
+            <div class="service-icon">💻</div>
+            <h4>Desktop Applications</h4>
+            <p>Creating robust desktop solutions with Python and Tkinter for data management and enterprise applications.</p>
+          </div>
+          
+          <div class="service-card scroll-reveal float-on-scroll">
+            <div class="service-icon">🔧</div>
+            <h4>Backend Integration</h4>
+            <p>Implementing robust backend solutions with Firebase and API integrations for seamless data management across platforms.</p>
+          </div>
+          
+          <div class="service-card scroll-reveal float-on-scroll">
+            <div class="service-icon">✅</div>
+            <h4>Full-Stack Solutions</h4>
+            <p>Delivering complete end-to-end solutions with integrated frontend, backend, and database architectures.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects highlight -->
+      <div class="projects-highlight">
+        <h3>Projects</h3>
+        <div class="highlight-grid">
+          
+          <div class="highlight-card scroll-reveal">
+            <h4>Brainiacz</h4>
+            <p class="project-tech">Flutter • Firebase • Dart</p>
+            <p>Online tutoring platform connecting students and educators with secure authentication, role-based dashboards, and efficient session management.</p>
+          </div>
+          
+          <div class="highlight-card scroll-reveal">
+            <h4>CKC Student Management System</h4>
+            <p class="project-tech">Python • Tkinter • SQLite</p>
+            <p>Desktop application that digitizes student records, replacing paper-based systems with secure data management and role-specific portals.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Closing statement -->
+      <div class="about-closing scroll-reveal">
+        <p>
+          When I'm not coding, I enjoy exploring new technologies, contributing to open-source 
+          projects, and staying updated with the latest development trends. I believe in 
+          continuous learning and always strive to improve my craft.
+        </p>
+        <p>
+          <strong>Currently available for freelance projects and collaboration opportunities.</strong>
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <script src="script.js"></script>
+</body>
+</html>
