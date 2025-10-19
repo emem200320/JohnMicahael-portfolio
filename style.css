@@ -4,9 +4,7 @@
 
 body {
   min-height: 100vh;
-  background: url('assets/images/background.jpg') no-repeat center center fixed;  /* ← Change filename */
-  background-size: cover;
-  background-attachment: fixed;
+  background-color: #0e0e10;
   margin: 0;
   font-family: 'Poppins', Arial, sans-serif;
   color: #d2d2d2;
@@ -200,7 +198,7 @@ body {
 
 .bn31 .bn31span {
   align-items: center;
-  background: #0e0e10;
+  background: #1c1c1d;
   border-radius: 40px;
   display: flex;
   justify-content: center;
@@ -511,7 +509,7 @@ body {
 ======================================== */
 
 .project-showcase {
-  background: linear-gradient(145deg, rgba(11, 43, 38, 0.8), rgba(0, 169, 80, 0.05));
+  background: linear-gradient(145deg, #0e0e10, rgba(0, 169, 80, 0.05));
   border: 1px solid rgba(134, 228, 228, 0.2);
   border-radius: 30px;
   padding: 3em;  /* Changed from 4em */
@@ -1485,7 +1483,7 @@ body {
     height: 18px;
   }
   
-  /* Center the button on mobile */
+ 
   .hero-content {
     display: flex;
     flex-direction: column;
@@ -1493,7 +1491,6 @@ body {
   }
 }
 
-/* Small Mobile (< 480px) */
 @media (max-width: 480px) {
   .bn31 {
     height: 44px;
@@ -1510,5 +1507,66 @@ body {
   .download-icon {
     width: 16px;
     height: 16px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 1em 1.5em;
+  }
+  
+  .navbar-brand {
+    font-size: 1.3em;
+  }
+  
+  .navbar-links {
+    gap: 1.5em;
+  }
+  
+  .navbar-links li a {
+    font-size: 0.95em;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    gap: 1em;
+  }
+  
+  .navbar-brand {
+    font-size: 1.4em;
+    margin-bottom: 0.5em;
+  }
+  
+  .navbar-links {
+    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .navbar-links li a {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0.8em;
+  }
+  
+  .navbar-brand {
+    font-size: 1.2em;
+  }
+  
+  .navbar-links {
+    gap: 0.8em;
+  }
+  
+  .navbar-links li a {
+    font-size: 0.85em;
+    padding-bottom: 3px;
   }
 }
