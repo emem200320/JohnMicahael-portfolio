@@ -619,16 +619,66 @@
       </div>
 
       <!-- Closing statement -->
-      <div class="about-closing">
-        <p>
-          When I'm not coding, I enjoy exploring new technologies, contributing to open-source 
-          projects, and staying updated with the latest development trends. I believe in 
-          continuous learning and always strive to improve my craft.
-        </p>
-        <p>
-          <strong>Currently available for freelance projects and collaboration opportunities.</strong>
-        </p>
-      </div>
+      <!-- Replace the about-closing div with this contact form -->
+<div class="about-closing">
+  <h3>Send Me a Message</h3>
+  <p>Have a project in mind or just want to connect? Drop me a message below!</p>
+  
+  <form id="contactForm" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+    
+    
+    <input type="hidden" name="access_key" value="fa5bc1d0-fe2a-406f-bb9b-7d5b65ecd265">
+    
+    <!-- Honeypot Spam Protection -->
+    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+    
+    <!-- Form Fields -->
+    <div class="form-group">
+      <label for="name">Name <span class="required">*</span></label>
+      <input 
+        type="text" 
+        id="name" 
+        name="name" 
+        placeholder="Your Name" 
+        required
+      >
+    </div>
+    
+    <div class="form-group">
+      <label for="email">Email <span class="required">*</span></label>
+      <input 
+        type="email" 
+        id="email" 
+        name="email" 
+        placeholder="your.email@example.com" 
+        required
+      >
+    </div>
+    
+    <div class="form-group">
+      <label for="message">Message <span class="required">*</span></label>
+      <textarea 
+        id="message" 
+        name="message" 
+        rows="5" 
+        placeholder="Your message here..." 
+        required
+      ></textarea>
+    </div>
+    
+    <!-- Submit Button -->
+    <button type="submit" class="submit-btn">
+      <span class="btn-text">Send Message</span>
+      <svg class="send-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="22" y1="2" x2="11" y2="13"></line>
+        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+      </svg>
+    </button>
+    
+    <!-- Success/Error Messages -->
+    <div id="formMessage" class="form-message"></div>
+  </form>
+</div>
     </div>
   </section>
   

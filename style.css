@@ -1138,6 +1138,8 @@ body {
   text-shadow: 0 0 10px rgba(134, 228, 228, 0.5);
 }
 
+
+
 /* ========================================
    PROJECTS SIDE-BY-SIDE LAYOUT
 ======================================== */
@@ -1146,6 +1148,193 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2em;
+}
+/* ========================================
+   CONTACT FORM STYLES
+======================================== */
+
+.about-closing h3 {
+  font-size: 2em;
+  color: #86e4e4;
+  margin-bottom: 0.5em;
+  font-weight: 700;
+  text-shadow: 0 2px 10px rgba(0, 169, 80, 0.3);
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 2em auto 0;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 1.5em;
+}
+
+.form-group label {
+  display: block;
+  color: #86e4e4;
+  font-size: 1em;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  letter-spacing: 0.5px;
+}
+
+.required {
+  color: #ff6b6b;
+  margin-left: 3px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.9em 1.2em;
+  background: rgba(0, 169, 80, 0.05);
+  border: 2px solid rgba(134, 228, 228, 0.3);
+  border-radius: 10px;
+  color: #d2d2d2;
+  font-size: 1em;
+  font-family: 'Poppins', Arial, sans-serif;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #86e4e4;
+  background: rgba(0, 169, 80, 0.1);
+  box-shadow: 0 0 15px rgba(134, 228, 228, 0.3);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: rgba(184, 230, 213, 0.5);
+}
+
+/* Submit Button */
+.submit-btn {
+  background: linear-gradient(to right, #006175 0%, #00a950 100%);
+  border: none;
+  border-radius: 40px;
+  padding: 4px;
+  width: 100%;
+  max-width: 250px;
+  height: 55px;
+  cursor: pointer;
+  position: relative;
+  margin: 1.5em auto 0;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 169, 80, 0.4);
+}
+
+.submit-btn span.btn-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6em;
+  background: #1c1c1d;
+  border-radius: 40px;
+  height: 100%;
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover span.btn-text {
+  background: transparent;
+}
+
+.send-icon {
+  transition: transform 0.3s ease;
+}
+
+.submit-btn:hover .send-icon {
+  transform: translateX(5px);
+}
+
+/* Form Messages */
+.form-message {
+  margin-top: 1.5em;
+  padding: 1em;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 500;
+  display: none;
+}
+
+.form-message.success {
+  background: rgba(0, 169, 80, 0.2);
+  border: 2px solid rgba(0, 169, 80, 0.5);
+  color: #86e4e4;
+  display: block;
+}
+
+.form-message.error {
+  background: rgba(255, 107, 107, 0.2);
+  border: 2px solid rgba(255, 107, 107, 0.5);
+  color: #ff6b6b;
+  display: block;
+}
+
+/* Loading State */
+.submit-btn.loading {
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.submit-btn.loading .btn-text::after {
+  content: '...';
+  animation: dots 1.5s steps(4, end) infinite;
+}
+
+@keyframes dots {
+  0%, 20% { content: '.'; }
+  40% { content: '..'; }
+  60%, 100% { content: '...'; }
+}
+
+/* Hidden Honeypot */
+.hidden {
+  display: none !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-form {
+    max-width: 100%;
+  }
+  
+  .submit-btn {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-group input,
+  .form-group textarea {
+    padding: 0.8em 1em;
+    font-size: 0.95em;
+  }
+  
+  .submit-btn {
+    height: 50px;
+  }
+  
+  .submit-btn span.btn-text {
+    font-size: 1em;
+  }
 }
 
 
@@ -1570,3 +1759,4 @@ body {
     padding-bottom: 3px;
   }
 }
+

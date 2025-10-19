@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
     initTypingAnimation();
     initSmoothScroll();
     initProjectSlider();
+    initContactForm();
 
     // ANIMATED SKILL BARS
     function initSkillBars() {
