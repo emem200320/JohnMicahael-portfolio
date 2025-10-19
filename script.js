@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", function() {
     initTypingAnimation();
     initSmoothScroll();
     initProjectSlider();
-    initCustomCursor();
 
     // ANIMATED SKILL BARS
     function initSkillBars() {
@@ -28,19 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // SCROLL ANIMATIONS
     function initScrollAnimations() {
-        // Fade-in reveal animation
-        const revealElements = document.querySelectorAll('.scroll-reveal');
-        const revealObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('revealed');
-                }
-            });
-        }, { 
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        });
-        revealElements.forEach(el => revealObserver.observe(el));
+        
 
         // Scale animation for hero section
         const scaleSections = document.querySelectorAll('.scale-on-scroll');
@@ -132,40 +119,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // CUSTOM CURSOR
-    function initCustomCursor() {
-        const cursor = document.querySelector('.custom-cursor');
-        const cursorDot = document.querySelector('.cursor-dot');
-
-        // Track cursor position
-        document.addEventListener('mousemove', function(e) {
-            cursor.style.left = e.clientX + 'px';
-            cursor.style.top = e.clientY + 'px';
-            cursorDot.style.left = e.clientX + 'px';
-            cursorDot.style.top = e.clientY + 'px';
-        });
-
-        // Cursor hover effects for interactive elements
-        const interactiveElements = document.querySelectorAll('a, button, .bn31, .slider-btn');
-        interactiveElements.forEach(element => {
-            element.addEventListener('mouseenter', () => cursor.classList.add('hover'));
-            element.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
-        });
-
-        // Special avatar hover effect
-        const heroImage = document.querySelector('.hero-image');
-        const avatarImg = document.querySelector('.hero-image img');
-
-        avatarImg.addEventListener('mouseenter', function() {
-            cursor.classList.add('avatar-hover');
-            heroImage.classList.add('emphasize');
-        });
-
-        avatarImg.addEventListener('mouseleave', function() {
-            cursor.classList.remove('avatar-hover');
-            heroImage.classList.remove('emphasize');
-        });
-    }
+    
 });
 
 // PROJECT IMAGE SLIDER
