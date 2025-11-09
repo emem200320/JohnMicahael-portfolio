@@ -1149,6 +1149,62 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 2em;
 }
+
+.project-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+  margin-top: 2em;
+  flex-wrap: wrap;
+}
+
+.project-btn {
+  background: linear-gradient(to right, #006175 0%, #00a950 100%);
+  border: none;
+  border-radius: 40px;
+  padding: 4px;
+  min-width: 250px;
+  height: 55px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.project-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 169, 80, 0.4);
+}
+
+.project-btn-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6em;
+  background: #1c1c1d;
+  border-radius: 40px;
+  height: 100%;
+  width: 90%;
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: 600;
+  transition: background 0.3s ease;
+  padding: 0 1.5em;
+}
+
+.project-btn:hover .project-btn-inner {
+  background: transparent;
+}
+
+.project-btn-icon {
+  transition: transform 0.3s ease;
+}
+
+.project-btn:hover .project-btn-icon {
+  transform: scale(1.1);
+}
+
 /* ========================================
    CONTACT FORM STYLES
 ======================================== */
@@ -1760,3 +1816,52 @@ body {
   }
 }
 
+/* Tablet responsiveness (768px - 1024px) */
+@media (max-width: 1024px) {
+  .project-actions {
+    gap: 1.2em;
+  }
+  
+  .project-btn {
+    min-width: 180px;
+    height: 50px;
+  }
+  
+  .project-btn-inner {
+    font-size: 1em;
+    padding: 0 1.2em;
+  }
+}
+
+/* Mobile responsiveness (< 768px) */
+@media (max-width: 768px) {
+  .project-actions {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+  }
+  
+  .project-btn {
+    width: 100%;
+    max-width: 300px;
+    height: 52px;
+  }
+  
+  .project-btn-inner {
+    font-size: 1.05em;
+  }
+}
+
+/* Small mobile (< 480px) */
+@media (max-width: 480px) {
+  .project-btn {
+    height: 48px;
+    max-width: 280px;
+  }
+  
+  .project-btn-inner {
+    font-size: 0.95em;
+    padding: 0 1em;
+    gap: 0.5em;
+  }
+}
